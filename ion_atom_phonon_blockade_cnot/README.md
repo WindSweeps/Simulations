@@ -48,7 +48,9 @@ From the parent `Code` directory:
 zip -qr ion_atom_phonon_blockade_colab.zip ion_atom_phonon_blockade_colab -x "ion_atom_phonon_blockade_colab/outputs/*"
 ```
 
-Open `Ion_Atom_Phonon_Blockade_Colab.ipynb` in Colab, upload the zip, and run the cells.
+Open `Ion_Atom_Phonon_Blockade_Colab.ipynb` in Colab and run the cells. The notebook can clone this
+GitHub project directly, install dependencies, explain each simulation step, and run the code cells that
+generate the figures. The zip is kept as a backup for manual upload workflows.
 
 ## Notes
 
