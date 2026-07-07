@@ -1,0 +1,51 @@
+{
+  "paper": "arXiv:2602.19222v2, Ion-atom two-qubit quantum gate based on phonon blockade",
+  "params": {
+    "ion_mass_amu": 9.012183065,
+    "omega_i_mhz": 11.2,
+    "rydberg_c4_scale": 50700000000.0,
+    "ground_c4_au": 160.0,
+    "ion_atom_distance_um": 2.57,
+    "eta_lamb_dicke": 0.1,
+    "omega_ion_mhz": 1.0,
+    "omega_atom_ghz": 1.0,
+    "n_phonon_initial": 1,
+    "n_phonon_max": 4,
+    "final_s_gate": true,
+    "rydberg_phonon_leakage_scale": 0.46,
+    "rydberg_u2_detuning_scale": 1.0,
+    "blocked_branch_phase_rad": 3.141592653589793
+  },
+  "scales": {
+    "V0_rad_s": 60281615187.686584,
+    "U1_rad_s": 1327780633.1540833,
+    "U2_rad_s": 3655760.9734949046,
+    "Delta_rad_s": 3755996.69387614,
+    "omega_bar_rad_s": 66615678.74653522,
+    "x_shift_m": -1.4898957870221513e-07,
+    "lambda_i_m": 1.0006900548534178e-08,
+    "beta": 0.02202629489969775,
+    "omega_bar_mhz": 10.602214559932795,
+    "Delta_mhz": 0.5977854400672041,
+    "U1_ghz": 0.21132285110815888,
+    "U2_mhz": 0.5818324296941535,
+    "etaOmega_i_mhz": 0.09999999999999999
+  },
+  "model_notes": "The parameter rydberg_phonon_leakage_scale is an effective strength for the nonideal U1-driven phonon leakage during Rydberg pi pulses in Eq. (10)-(11). The default 0.46 calibrates the compact truncated model to the paper's roughly 90% fidelity at Omega_a/2pi = 1 GHz. Set it to 0 for the ideal fast-pulse limit.",
+  "metrics_at_default": {
+    "fidelity": 0.8988932201663855,
+    "leakage": 0.09485080163259607
+  },
+  "fidelity_scan_max": {
+    "omega_atom_ghz": 5.0,
+    "fidelity": 0.991847617239836,
+    "leakage": 0.004304818154340806,
+    "U1_over_Omega_a": 0.04226457022163178,
+    "Delta_over_etaOmega_i": 5.977854400672041
+  },
+  "outputs": [
+    "fig2_shifted_trap.png",
+    "fig3_amplitude_traces.png",
+    "fig4_fidelity_scan.png"
+  ]
+}
